@@ -1,0 +1,115 @@
+
+body {
+  text-align:center;
+  background-image: url('https://i.pinimg.com/originals/09/bb/62/09bb623bf83a706e860df279d1578127.jpg');
+  color:lightpink;
+  font-family: 'Bangers', cursive;
+  font-size: 25px;
+  letter-spacing: 3px;
+  line-height: 0.8em;
+
+}
+
+.all {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows: 500px;
+  grid-template-areas:
+  ". container terminal";
+}
+
+
+.words {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  line-height:0.5em;
+
+  border: 1px solid white;
+}
+.terminal {
+  grid-area: terminal;
+  margin-top:100px;
+  margin-left:0px;
+
+
+}
+
+.container {
+  margin-top:100px;
+  grid-area: container;
+  display:flex;
+
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+  background-color: lightblue;
+  display:flex;
+  flex-wrap:wrap;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+
+
+}
+
+.tetromino {
+  background-color: pink;
+  border-radius: 5px;
+  background-image: radial-gradient(transparent 0%, white 99%);
+
+
+}
+
+h4 {
+  text-align:left;
+  margin-left:35px;
+  margin-top:70px;
+}
+.minigrid {
+  margin-top: -110px;
+  margin-left:150px;
+  width:80px;
+  height:80px;
+  display:flex;
+  flex-wrap:wrap;
+  background-color: lightyellow;
+  padding: 20px 20px 20px 20px;
+  border: 1px solid pink;
+  border-radius:100px;
+}
+
+.minigrid div {
+  height:20px;
+  width:20px;
+}
+
+#start-button {
+  margin-top:20px;
+  border-radius: 100px;
+  height:80px;
+  width:80px;
+  background-color: red;
+  color:white;
+  border:none;
+  box-shadow: -1px 24px 82px -36px rgba(247,0,82,1);
+  font-family: 'Righteous', cursive;
+
+}
+
+.num {
+  color: lightgreen;
+}
+
+#numLevels {
+  color: lightgreen;
+}
+
+audio {
+  display:none;
+}
